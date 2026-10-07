@@ -1,5 +1,5 @@
 import { ExternalLink, Github, CheckCircle, Server } from './Icons';
-import thinkbuildImg from '../assets/thinkbuild-preview.png';
+import thinkbuild2 from '../assets/thinkbuild2.png';
 import bookmyshowLogo from '../assets/bookmyshow-logo.png';
 
 export default function Projects() {
@@ -28,7 +28,7 @@ export default function Projects() {
               {/* Project Image Preview with Zoom */}
               <div className="relative aspect-video w-full overflow-hidden bg-slate-950 border-b border-slate-200 dark:border-slate-800">
                 <img
-                  src={thinkbuildImg}
+                  src={thinkbuild2}
                   alt="ThinkBuild Homepage Project Preview"
                   className="w-full h-full object-cover object-top group-hover:scale-105 hover:scale-105 transition-transform duration-300"
                 />

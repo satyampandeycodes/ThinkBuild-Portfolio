@@ -32,9 +32,6 @@ export default function Navbar({ darkMode, setDarkMode }) {
             href="#home"
             className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-emerald-500 rounded-md py-1"
           >
-            <span className="w-9 h-9 rounded-lg bg-indigo-600 dark:bg-emerald-600 text-white font-bold flex items-center justify-center text-sm tracking-wider shadow-sm group-hover:bg-indigo-700 dark:group-hover:bg-emerald-500 transition-colors">
-              SP
-            </span>
             <span className="font-semibold text-slate-900 dark:text-white text-base tracking-tight group-hover:text-indigo-600 dark:group-hover:text-emerald-400 transition-colors">
               Satyam Pandey
             </span>

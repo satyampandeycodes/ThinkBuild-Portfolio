@@ -118,6 +118,32 @@ export const LINKS = {
 
 ---
 
+## 📬 SMTP Contact Form Setup
+
+The contact form sends emails securely to your inbox via a Vercel-compatible serverless API endpoint (`/api/contact`) using **Nodemailer**. No credentials or secrets are exposed in the React frontend.
+
+### Required Environment Variables
+
+Add these variables in your **Vercel Project Settings** (`Settings` -> `Environment Variables`) or in your local `.env` file (see `.env.example`):
+
+| Variable | Description | Example / Recommended Value |
+| :--- | :--- | :--- |
+| `SMTP_HOST` | SMTP server host | `smtp.gmail.com` |
+| `SMTP_PORT` | SMTP port | `587` |
+| `SMTP_USER` | Authenticated email address | `satyampandey.sp18@gmail.com` |
+| `SMTP_PASSWORD` | SMTP password / Gmail App Password | *(Your 16-character Google App Password)* |
+| `CONTACT_TO` | Recipient email address | `satyampandey.sp18@gmail.com` |
+
+#### How to Generate a Gmail App Password:
+1. Go to your [Google Account Security Settings](https://myaccount.google.com/security).
+2. Ensure **2-Step Verification** is turned on.
+3. Visit [Google App Passwords](https://myaccount.google.com/apppasswords).
+4. Create an App Password (name it e.g. "Portfolio Contact Form").
+5. Copy the 16-character password into `SMTP_PASSWORD`.
+
+---
+
+
 ## 🎯 Key Design Highlights
 
 - **Serious & Authentic:** Looks like a genuine computer science engineering student portfolio without AI gimmicks (no neon glow, no particle clouds, no fake statistics).
