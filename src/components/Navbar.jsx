@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, Sun, Moon, Download } from './Icons';
+import { Menu, X, Sun, Moon, FileText } from './Icons';
 import { LINKS } from '../constants/links';
 
 export default function Navbar({ darkMode, setDarkMode }) {
@@ -30,12 +30,12 @@ export default function Navbar({ darkMode, setDarkMode }) {
           {/* Logo & Name */}
           <a
             href="#home"
-            className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-emerald-500 rounded-md py-1"
+            className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-emerald-500 rounded-md py-1"
           >
-            <span className="w-9 h-9 rounded-lg bg-blue-600 dark:bg-emerald-600 text-white font-bold flex items-center justify-center text-sm tracking-wider shadow-sm group-hover:bg-blue-700 dark:group-hover:bg-emerald-500 transition-colors">
+            <span className="w-9 h-9 rounded-lg bg-indigo-600 dark:bg-emerald-600 text-white font-bold flex items-center justify-center text-sm tracking-wider shadow-sm group-hover:bg-indigo-700 dark:group-hover:bg-emerald-500 transition-colors">
               SP
             </span>
-            <span className="font-semibold text-slate-900 dark:text-white text-base tracking-tight group-hover:text-blue-600 dark:group-hover:text-emerald-400 transition-colors">
+            <span className="font-semibold text-slate-900 dark:text-white text-base tracking-tight group-hover:text-indigo-600 dark:group-hover:text-emerald-400 transition-colors">
               Satyam Pandey
             </span>
           </a>
@@ -46,33 +46,35 @@ export default function Navbar({ darkMode, setDarkMode }) {
               <a
                 key={item.name}
                 href={item.href}
-                className="px-2.5 py-1.5 rounded-md hover:text-blue-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-colors"
+                className="px-2.5 py-1.5 rounded-md hover:text-indigo-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-colors"
               >
                 {item.name}
               </a>
             ))}
           </nav>
 
-          {/* Desktop Right Actions: Dark Mode Toggle & Download Resume */}
+          {/* Desktop Right Actions: Dark Mode Toggle & View Resume */}
           <div className="hidden lg:flex items-center gap-3">
             {/* Theme Toggle Button */}
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-emerald-500 transition-colors"
+              className="p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-emerald-500 transition-colors"
               aria-label="Toggle dark mode"
               title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
             >
               {darkMode ? <Sun size={18} className="text-amber-400" /> : <Moon size={18} />}
             </button>
 
-            {/* Download Resume Button */}
+            {/* View Resume Button */}
             <a
-              href={LINKS.resumePdf}
-              download="Satyam_Pandey_Resume.pdf"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs sm:text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-emerald-600 dark:hover:bg-emerald-700 rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-emerald-500"
+              href={LINKS.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs sm:text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-emerald-600 dark:hover:bg-emerald-700 rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-emerald-500"
+              aria-label="View Satyam Pandey's Resume (opens in a new tab)"
             >
-              <Download size={15} />
-              <span>Resume</span>
+              <FileText size={15} />
+              <span>View Resume</span>
             </a>
           </div>
 
@@ -88,7 +90,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-emerald-500"
+              className="p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-emerald-500"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -106,7 +108,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               key={item.name}
               href={item.href}
               onClick={handleNavClick}
-              className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-blue-600 dark:hover:text-emerald-400 transition-colors"
+              className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-emerald-400 transition-colors"
             >
               {item.name}
             </a>
@@ -114,13 +116,15 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
           <div className="pt-3 mt-2 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-2">
             <a
-              href={LINKS.resumePdf}
-              download="Satyam_Pandey_Resume.pdf"
+              href={LINKS.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={handleNavClick}
-              className="inline-flex items-center justify-center gap-2 w-full px-4 py-2.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-emerald-600 dark:hover:bg-emerald-700 rounded-lg shadow-sm transition-colors"
+              className="inline-flex items-center justify-center gap-2 w-full px-4 py-2.5 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-emerald-600 dark:hover:bg-emerald-700 rounded-lg shadow-sm transition-colors"
+              aria-label="View Satyam Pandey's Resume (opens in a new tab)"
             >
-              <Download size={16} />
-              <span>Download Resume</span>
+              <FileText size={16} />
+              <span>View Resume</span>
             </a>
           </div>
         </div>

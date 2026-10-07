@@ -1,7 +1,6 @@
 import { ExternalLink, Github, CheckCircle, Server } from './Icons';
 import thinkbuildImg from '../assets/thinkbuild-preview.png';
 import bookmyshowLogo from '../assets/bookmyshow-logo.png';
-import { projectsData } from '../data/portfolioData';
 
 export default function Projects() {
   return (
@@ -13,7 +12,7 @@ export default function Projects() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
             Featured Projects
           </h2>
-          <div className="w-12 h-1 bg-blue-600 dark:bg-emerald-500 rounded mt-2.5"></div>
+          <div className="w-12 h-1 bg-indigo-600 dark:bg-emerald-500 rounded mt-2.5"></div>
           <p className="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-2xl">
             Real development work showcasing responsive front-end engineering and production-grade Java backend architecture.
           </p>
@@ -23,7 +22,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
 
           {/* PROJECT 1: THINKBUILD HOMEPAGE */}
-          <div className="group flex flex-col justify-between rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-blue-500/40 dark:hover:border-emerald-500/40 transition-all duration-300">
+          <div className="group flex flex-col justify-between rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-indigo-500/40 dark:hover:border-emerald-500/40 transition-all duration-300">
 
             <div>
               {/* Project Image Preview with Zoom */}
@@ -44,7 +43,7 @@ export default function Projects() {
               {/* Card Body */}
               <div className="p-5 sm:p-6">
                 <div className="flex items-center justify-between gap-2 mb-2">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-emerald-400">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-emerald-400">
                     Web Development
                   </span>
                   <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
@@ -52,7 +51,7 @@ export default function Projects() {
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-emerald-400 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-emerald-400 transition-colors">
                   ThinkBuild Homepage
                 </h3>
 
@@ -79,15 +78,15 @@ export default function Projects() {
                   </h4>
                   <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
                     <li className="flex items-start gap-2">
-                      <CheckCircle size={15} className="text-blue-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={15} className="text-indigo-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <span>Developed responsive layout optimized for mobile and desktop screens</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle size={15} className="text-blue-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={15} className="text-indigo-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <span>Implemented clean, modular React component architecture</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle size={15} className="text-blue-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={15} className="text-indigo-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <span>Deployed live on Vercel platform</span>
                     </li>
                   </ul>
@@ -101,7 +100,7 @@ export default function Projects() {
                 href="https://think-build-home-page.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-emerald-600 dark:hover:bg-emerald-700 hover:shadow-md hover:-translate-y-0.5 rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-emerald-500"
+                className="inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-emerald-600 dark:hover:bg-emerald-700 hover:shadow-md hover:-translate-y-0.5 rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-emerald-500"
               >
                 <ExternalLink size={15} />
                 <span>Live Demo</span>
@@ -110,7 +109,7 @@ export default function Projects() {
                 href="https://github.com/satyampandeycodes"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 hover:shadow-sm hover:-translate-y-0.5 border border-slate-300 dark:border-slate-700 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-emerald-500"
+                className="inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 hover:shadow-sm hover:-translate-y-0.5 border border-slate-300 dark:border-slate-700 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-emerald-500"
               >
                 <Github size={15} />
                 <span>GitHub Profile</span>
@@ -120,7 +119,7 @@ export default function Projects() {
           </div>
 
           {/* PROJECT 2: BOOKMYSHOW BACKEND API (No View Code option as requested) */}
-          <div className="group flex flex-col justify-between rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-blue-500/40 dark:hover:border-emerald-500/40 transition-all duration-300">
+          <div className="group flex flex-col justify-between rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-indigo-500/40 dark:hover:border-emerald-500/40 transition-all duration-300">
 
             <div>
               {/* Project Image Preview (Logo Header) with Matching Zoom */}
@@ -151,7 +150,7 @@ export default function Projects() {
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-emerald-400 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-emerald-400 transition-colors">
                   BookMyShow Backend API
                 </h3>
 
@@ -178,15 +177,15 @@ export default function Projects() {
                   </h4>
                   <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
                     <li className="flex items-start gap-2">
-                      <CheckCircle size={15} className="text-blue-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={15} className="text-indigo-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <span>Engineered Controller → Service → Repository → DTO layered architecture</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle size={15} className="text-blue-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={15} className="text-indigo-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <span>Enforced atomic booking workflows with @Transactional execution and ACID guarantees</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle size={15} className="text-blue-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={15} className="text-indigo-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <span>Centralized exception handling via @RestControllerAdvice delivering standardized ApiError</span>
                     </li>
                   </ul>

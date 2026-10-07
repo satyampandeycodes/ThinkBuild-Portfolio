@@ -21,7 +21,7 @@ export default function About() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
             About Me
           </h2>
-          <div className="w-12 h-1 bg-blue-600 dark:bg-emerald-500 rounded mt-2.5"></div>
+          <div className="w-12 h-1 bg-indigo-600 dark:bg-emerald-500 rounded mt-2.5"></div>
         </div>
 
         {/* Content Layout */}
@@ -36,14 +36,8 @@ export default function About() {
             <div className="pt-3 border-t border-slate-200 dark:border-slate-800/80 flex flex-col sm:flex-row flex-wrap gap-4 text-sm font-medium">
               <span className="text-slate-700 dark:text-slate-300">
                 <strong className="text-slate-900 dark:text-white font-semibold">Email: </strong>
-                <a href={`mailto:${LINKS.email}`} className="text-blue-600 dark:text-emerald-400 hover:underline break-all">
+                <a href={`mailto:${LINKS.email}`} className="text-indigo-600 dark:text-emerald-400 hover:underline break-all">
                   {LINKS.email}
-                </a>
-              </span>
-              <span className="text-slate-700 dark:text-slate-300">
-                <strong className="text-slate-900 dark:text-white font-semibold">Phone: </strong>
-                <a href={`tel:${LINKS.phone}`} className="text-blue-600 dark:text-emerald-400 hover:underline">
-                  {LINKS.phone}
                 </a>
               </span>
             </div>
@@ -54,12 +48,12 @@ export default function About() {
             {quickFacts.map((fact, index) => (
               <div
                 key={index}
-                className="group p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:-translate-y-1 hover:shadow-md hover:border-blue-500/40 dark:hover:border-emerald-500/40 transition-all duration-200 cursor-default"
+                className="group p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:-translate-y-1 hover:shadow-md hover:border-indigo-500/40 dark:hover:border-emerald-500/40 transition-all duration-200 cursor-default"
               >
                 <p className="text-xs font-semibold text-slate-400 dark:text-slate-400 uppercase tracking-wider">
                   {fact.label}
                 </p>
-                <p className="text-lg font-bold text-slate-900 dark:text-white mt-1 group-hover:text-blue-600 dark:group-hover:text-emerald-400 transition-colors">
+                <p className="text-lg font-bold text-slate-900 dark:text-white mt-1 group-hover:text-indigo-600 dark:group-hover:text-emerald-400 transition-colors">
                   {fact.value}
                 </p>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">

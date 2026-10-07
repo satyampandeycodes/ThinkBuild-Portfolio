@@ -57,7 +57,7 @@ ThinkBuild-Portfolio/
 │   │   ├── Education.jsx    # Sandip University & Schooling timeline
 │   │   ├── Achievements.jsx # LeetCode 210+ problems & 8.64 CGPA
 │   │   ├── Leadership.jsx   # NASA Hackathon, Tech Charades, Rojgar Mahakumbh
-│   │   ├── Contact.jsx      # Direct email/phone with 1-click copy & socials
+│   │   ├── Contact.jsx      # Direct email with 1-click copy & socials
 │   │   ├── Footer.jsx       # Copyright and profile links
 │   │   └── Icons.jsx        # Lightweight, self-contained SVG icon components
 │   ├── constants/
@@ -82,7 +82,7 @@ All external URLs and contact details are centralized in:
 
 To update your Google Drive resume link:
 1. Open `src/constants/links.js`.
-2. Replace `"YOUR_GOOGLE_DRIVE_RESUME_LINK"` with your public shareable Google Drive link.
+2. Update `resumeUrl` with your public shareable Google Drive link.
 
 ```javascript
 export const LINKS = {
@@ -90,10 +90,9 @@ export const LINKS = {
   linkedin: "https://linkedin.com/in/satyam-pandey",
   leetcode: "https://leetcode.com/u/Satyampandeysp06",
   email: "satyampandey.sp18@gmail.com",
-  phone: "+91-9569671854",
   location: "Nashik, Maharashtra",
   thinkBuildHomepage: "https://think-build-home-page.vercel.app/",
-  googleDriveResume: "YOUR_GOOGLE_DRIVE_RESUME_LINK", // <-- Update here!
+  resumeUrl: "https://drive.google.com/file/d/10VuxLJ5XX1Dj91YwR4SvQnyZvNBesaGS/view?usp=drivesdk",
   resumePdf: "/resume.pdf",
 };
 ```

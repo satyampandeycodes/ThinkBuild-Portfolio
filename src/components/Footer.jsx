@@ -15,7 +15,7 @@ export default function Footer() {
             href={LINKS.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-600 dark:hover:text-emerald-400 transition-colors"
+            className="hover:text-indigo-600 dark:hover:text-emerald-400 transition-colors"
             aria-label="GitHub profile"
             title="GitHub"
           >
@@ -25,7 +25,7 @@ export default function Footer() {
             href={LINKS.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-600 dark:hover:text-emerald-400 transition-colors"
+            className="hover:text-indigo-600 dark:hover:text-emerald-400 transition-colors"
             aria-label="LinkedIn profile"
             title="LinkedIn"
           >
@@ -35,7 +35,7 @@ export default function Footer() {
             href={LINKS.leetcode}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-600 dark:hover:text-emerald-400 transition-colors"
+            className="hover:text-indigo-600 dark:hover:text-emerald-400 transition-colors"
             aria-label="LeetCode profile"
             title="LeetCode"
           >

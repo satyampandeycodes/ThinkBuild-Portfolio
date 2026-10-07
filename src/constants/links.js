@@ -6,10 +6,13 @@ export const LINKS = {
   linkedin: "https://linkedin.com/in/satyam-pandey",
   leetcode: "https://leetcode.com/u/Satyampandeysp06",
   email: "satyampandey.sp18@gmail.com",
-  phone: "+91-9569671854",
   location: "Nashik, Maharashtra",
   thinkBuildHomepage: "https://think-build-home-page.vercel.app/",
   
-  // Local resume path for direct download (stored in public/resume.pdf):
+  // Google Drive resume link for online viewing:
+  resumeUrl: "https://drive.google.com/file/d/10VuxLJ5XX1Dj91YwR4SvQnyZvNBesaGS/view?usp=drivesdk",
+
+  // Local resume path fallback:
   resumePdf: "/resume.pdf",
 };
+
