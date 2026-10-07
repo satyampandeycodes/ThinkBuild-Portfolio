@@ -87,7 +87,7 @@ To update your Google Drive resume link:
 ```javascript
 export const LINKS = {
   github: "https://github.com/satyampandeycodes",
-  linkedin: "https://linkedin.com/in/satyam-pandey",
+  linkedin: "https://www.linkedin.com/in/satyam-pandey-87b190337",
   leetcode: "https://leetcode.com/u/Satyampandeysp06",
   email: "satyampandey.sp18@gmail.com",
   location: "Nashik, Maharashtra",
