@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- CONFIGURATION ITEM: Replace domain with your verified production domain when deployed -->
   <url>
-    <loc>https://satyam-pandey-portfolio.vercel.app/</loc>
+    <loc>https://think-build-portfolio.vercel.app/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
