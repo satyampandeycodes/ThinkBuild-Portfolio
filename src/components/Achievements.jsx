@@ -50,9 +50,9 @@ export default function Achievements() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-emerald-400 transition-colors">
+                    <h4 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-emerald-400 transition-colors">
                       {item.title}
-                    </h3>
+                    </h4>
                     <p className="text-xs font-semibold text-indigo-600 dark:text-emerald-400 uppercase tracking-wider mt-1">
                       {item.subtitle}
                     </p>
@@ -87,9 +87,9 @@ export default function Achievements() {
                     </span>
                   </div>
 
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-emerald-400 transition-colors">
+                  <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-emerald-400 transition-colors">
                     {item.title}
-                  </h3>
+                  </h4>
 
                   <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                     {item.description}

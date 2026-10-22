@@ -1,0 +1,7 @@
+# Robots.txt for Satyam Pandey Portfolio
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# XML Sitemap URL (Replace domain with your verified production domain when deployed)
+Sitemap: https://satyam-pandey-portfolio.vercel.app/sitemap.xml

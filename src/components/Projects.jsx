@@ -29,7 +29,9 @@ export default function Projects() {
               <div className="relative aspect-video w-full overflow-hidden bg-slate-950 border-b border-slate-200 dark:border-slate-800">
                 <img
                   src={thinkbuild2}
-                  alt="ThinkBuild Homepage Project Preview"
+                  alt="ThinkBuild Responsive Homepage Web Project Preview"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover object-top group-hover:scale-105 hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-3 right-3">
@@ -127,7 +129,9 @@ export default function Projects() {
                 <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden shadow-xl border border-white/10">
                   <img
                     src={bookmyshowLogo}
-                    alt="BookMyShow Ticket Logo"
+                    alt="BookMyShow Java Spring Boot Backend API Architecture Logo"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-110 hover:scale-110 transition-transform duration-300"
                   />
                 </div>

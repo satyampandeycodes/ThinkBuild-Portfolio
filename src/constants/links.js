@@ -2,6 +2,9 @@
 // You can easily update your links and placeholders here
 
 export const LINKS = {
+  // Production site URL (Update with your verified domain when deployed)
+  siteUrl: "https://satyam-pandey-portfolio.vercel.app",
+
   github: "https://github.com/satyampandeycodes",
   linkedin: "https://www.linkedin.com/in/satyam-pandey-87b190337",
   leetcode: "https://leetcode.com/u/Satyampandeysp06",

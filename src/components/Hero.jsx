@@ -87,7 +87,8 @@ export default function Hero() {
               <div className="w-full h-full rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 flex items-center justify-center">
                 <img
                   src={profileImg}
-                  alt="Satyam Pandey"
+                  alt="Satyam Pandey - Aspiring Java Backend Developer"
+                  fetchPriority="high"
                   className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>

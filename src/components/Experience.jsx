@@ -35,7 +35,9 @@ export default function Experience() {
                   <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-700/80 bg-slate-50 dark:bg-slate-800 p-2 flex items-center justify-center flex-shrink-0 shadow-xs group-hover:scale-105 group-hover:border-indigo-500/40 dark:group-hover:border-emerald-500/40 transition-all duration-300">
                     <img
                       src={thinkbuildLogo}
-                      alt={`${exp.company} Logo`}
+                      alt={`${exp.company} - Web Development Internship Logo`}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-contain"
                     />
                   </div>
